@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sénégal Évasion - Agence de Voyage & Séjours Touristiques au Sénégal</title>
+    <meta name="description" content="Découvrez le Sénégal et l'Afrique avec Sénégal Évasion. Circuits organisés, séjours sur-mesure, escapades à Gorée, Lac Rose, Sine-Saloum et Casamance.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         1. TOP ANNOUNCEMENT BAR
+    ===================================================== -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                    <span><i class="bi bi-geo-alt-fill text-warning me-1"></i> Saint-Louis & Dakar, Sénégal</span>
+                    <span><i class="bi bi-telephone-fill text-warning me-1"></i> <a href="tel:+221783729251">+221 78 372 92 51</a></span>
+                    <span><i class="bi bi-envelope-fill text-warning me-1"></i> <a href="mailto:contact@senegalevasion.com">contact@senegalevasion.com</a></span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="top-bar-badge"><i class="bi bi-stars"></i> Offre Saison : -15% sur les circuits Saloum</span>
+                    <span class="text-light">Assistance 24h/7j</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         2. NAVBAR
+    ===================================================== -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-icon-wrapper">
+                    <i class="bi bi-airplane-engines-fill"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="title">Sénégal Évasion</span>
+                    <span class="subtitle">L'art du voyage & évasion</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Afficher le menu">
+                <i class="bi bi-list fs-2 text-dark"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/circuits.html">Circuits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/apropos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="nav-link nav-btn-book" href="#reservationModal" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            <i class="bi bi-calendar-check-fill"></i> Réserver
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================================================
+         3. HERO CAROUSEL
+    ===================================================== -->
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="images/GOREE.jpg" class="d-block w-100 carousel-img" alt="Île de Gorée au Sénégal">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <span class="hero-pill-badge"><i class="bi bi-compass"></i> Bienvenue chez Sénégal Évasion</span>
+                        <h1>Explorez le Sénégal avec <span class="text-highlight">Élégance & Passion</span></h1>
+                        <p>Découvrez la magie de nos terres : de l'histoire poignante de Gorée aux mangroves sauvages du Sine-Saloum et aux plages dorées de Casamance.</p>
+                        <div class="hero-actions">
+                            <a href="#reservationModal" data-bs-toggle="modal" data-bs-target="#reservationModal" class="btn-main">
+                                Réserver un séjour <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="pages/destinations.html" class="btn-secondary-custom">
+                                Voir nos destinations <i class="bi bi-grid-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="images/ROSE.jpg" class="d-block w-100 carousel-img" alt="Le majestueux Lac Rose">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <span class="hero-pill-badge"><i class="bi bi-geo-fill"></i> Des Paysages Inoubliables</span>
+                        <h1>Vivez des Émotions <span class="text-highlight">Uniques & Authentiques</span></h1>
+                        <p>Des circuits sur-mesure combinant aventure 4x4, nuit sous les étoiles à Lompoul et immersion chaleureuse dans la pure tradition Teranga.</p>
+                        <div class="hero-actions">
+                            <a href="pages/circuits.html" class="btn-main">
+                                Explorer nos circuits <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="pages/contact.html" class="btn-secondary-custom">
+                                Devis personnalisé <i class="bi bi-chat-dots-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="images/SALOUM.jpg" class="d-block w-100 carousel-img" alt="Delta du Sine Saloum">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <span class="hero-pill-badge"><i class="bi bi-shield-check"></i> Accompagnement Premium</span>
+                        <h1>Votre Voyage en Toute <span class="text-highlight">Sérénité & Sécurité</span></h1>
+                        <p>Guides locaux certifiés, hébergements sélectionnés avec soin et assistance 24/7 pour des vacances parfaites.</p>
+                        <div class="hero-actions">
+                            <a href="#reservationModal" data-bs-toggle="modal" data-bs-target="#reservationModal" class="btn-main">
+                                Planifier maintenant <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="pages/apropos.html" class="btn-secondary-custom">
+                                Qui sommes-nous ? <i class="bi bi-info-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         4. QUICK BOOKING / SEARCH WIDGET
+    ===================================================== -->
+    <div class="container hero-search-wrapper">
+        <div class="hero-search-card">
+            <form id="heroSearchForm" class="row g-3 align-items-end">
+                <div class="col-lg-3 col-md-6">
+                    <div class="search-field">
+                        <label for="heroDestination"><i class="bi bi-geo-alt-fill"></i> Où voulez-vous aller ?</label>
+                        <select id="heroDestination" class="form-select">
+                            <option value="Île de Gorée">Île de Gorée</option>
+                            <option value="Lac Rose">Lac Rose</option>
+                            <option value="Delta du Saloum">Delta du Saloum</option>
+                            <option value="Désert de Lompoul">Désert de Lompoul</option>
+                            <option value="Saint-Louis">Saint-Louis Colonial</option>
+                            <option value="Cap Skirring">Cap Skirring & Casamance</option>
+                            <option value="Parc Niokolo-Koba">Niokolo-Koba Safari</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="search-field">
+                        <label for="heroType"><i class="bi bi-compass-fill"></i> Type de voyage</label>
+                        <select id="heroType" class="form-select">
+                            <option value="circuit">Circuit Organisé</option>
+                            <option value="detente">Plage & Détente</option>
+                            <option value="culture">Culture & Histoire</option>
+                            <option value="safari">Safari & Nature</option>
+                            <option value="aventure">Aventure & Écotourisme</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="search-field">
+                        <label for="heroDate"><i class="bi bi-calendar3"></i> Date de départ</label>
+                        <input type="date" id="heroDate" class="form-control" value="2026-10-15">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <button type="submit" class="btn-main w-100">
+                        <i class="bi bi-search"></i> Trouver mon séjour
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         5. WHY CHOOSE US
+    ===================================================== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label"><i class="bi bi-award-fill"></i> Pourquoi nous choisir</span>
+                <h2 class="section-title">L'Excellence du Voyage au Sénégal</h2>
+                <p class="section-subtitle">Sénégal Évasion allie l'authenticité de l'accueil sénégalais à une organisation rigoureuse pour vous offrir des souvenirs inoubliables.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-globe-americas"></i>
+                        </div>
+                        <h4>Destinations d'Exception</h4>
+                        <p>Des sites incontournables aux joyaux cachés, vivez le Sénégal dans toute sa splendeur.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Sécurité & Sérénité</h4>
+                        <p>Véhicules climatisés récents, chauffeurs expérimentés et respect rigoureux des normes.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4>Tarifs Transparents</h4>
+                        <p>Aucun frais caché. Des formules étudiées pour garantir le meilleur rapport qualité/prix.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>Accompagnement 24/7</h4>
+                        <p>Une équipe réactive et dévouée à votre écoute avant, pendant et après votre séjour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         6. POPULAR DESTINATIONS PREVIEW
+    ===================================================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+                <div>
+                    <span class="section-label"><i class="bi bi-stars"></i> Coups de cœur</span>
+                    <h2 class="section-title mb-0">Destinations Incontournables</h2>
+                </div>
+                <a href="pages/destinations.html" class="btn-outline-primary-custom mt-3 mt-md-0">
+                    Voir les 10 destinations <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <!-- Card 1: Gorée -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/gorée.jpg" alt="Île de Gorée">
+                            <span class="card-badge-top-left"><i class="bi bi-clock-history"></i> Histoire & Culture</span>
+                            <span class="card-badge-top-right">Populaire</span>
+                            <div class="card-rating-badge">
+                                <i class="bi bi-star-fill"></i> 4.9 (128 avis)
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Baie de Dakar</span>
+                            <h3 class="card-title">Île de Gorée & Maison des Esclaves</h3>
+                            <p class="card-desc">Plongez dans l'histoire universelle au cœur des ruelles fleuries et de l'architecture coloniale classée UNESCO.</p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Guide historien</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Traversée chaloupe</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Déjeuner vue mer</li>
+                            </ul>
+                            <div class="card-footer-action">
+                                <div class="card-price-block">
+                                    <span class="price-label">À partir de</span>
+                                    <span class="price-value">35 000 FCFA <small>/ pers</small></span>
+                                </div>
+                                <button type="button" class="btn-main btn-book-now" data-bs-toggle="modal" data-bs-target="#reservationModal" data-destination="Île de Gorée">
+                                    Réserver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Saloum -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/saloumdelta (1).jpg" alt="Delta du Sine Saloum">
+                            <span class="card-badge-top-left"><i class="bi bi-tree-fill"></i> Écotourisme</span>
+                            <span class="card-badge-top-right">Must See</span>
+                            <div class="card-rating-badge">
+                                <i class="bi bi-star-fill"></i> 5.0 (94 avis)
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Sine-Saloum</span>
+                            <h3 class="card-title">Delta du Saloum & Îles aux Oiseaux</h3>
+                            <p class="card-desc">Balade en pirogue à travers la mangrove féerique, observation ornithologique et dégustation d'huîtres sauvages.</p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Pirogue privée</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Écolodge éco-responsable</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Village de pêcheurs</li>
+                            </ul>
+                            <div class="card-footer-action">
+                                <div class="card-price-block">
+                                    <span class="price-label">À partir de</span>
+                                    <span class="price-value">75 000 FCFA <small>/ pers</small></span>
+                                </div>
+                                <button type="button" class="btn-main btn-book-now" data-bs-toggle="modal" data-bs-target="#reservationModal" data-destination="Delta du Saloum">
+                                    Réserver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Cap Skirring -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/capskirring.jpg" alt="Cap Skirring en Casamance">
+                            <span class="card-badge-top-left"><i class="bi bi-water"></i> Plage & Nature</span>
+                            <span class="card-badge-top-right">Détente</span>
+                            <div class="card-rating-badge">
+                                <i class="bi bi-star-fill"></i> 4.9 (82 avis)
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Basse-Casamance</span>
+                            <h3 class="card-title">Cap Skirring & Saveurs Casamançaises</h3>
+                            <p class="card-desc">Des kilomètres de sable blanc bordés de cocotiers, une culture diola riche et une hospitalité légendaire.</p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Hôtel pieds dans l'eau</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Excursion îles d'Egueye</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Vols/Transfert inclus</li>
+                            </ul>
+                            <div class="card-footer-action">
+                                <div class="card-price-block">
+                                    <span class="price-label">À partir de</span>
+                                    <span class="price-value">145 000 FCFA <small>/ pers</small></span>
+                                </div>
+                                <button type="button" class="btn-main btn-book-now" data-bs-toggle="modal" data-bs-target="#reservationModal" data-destination="Cap Skirring">
+                                    Réserver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         7. FEATURED CIRCUITS
+    ===================================================== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label"><i class="bi bi-signpost-2-fill"></i> Itinéraires Signature</span>
+                <h2 class="section-title">Nos Circuits les Plus Prisés</h2>
+                <p class="section-subtitle">Chaque circuit est conçu pour vous offrir un équilibre idéal entre découverte culturelle, confort et déconnexion totale.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Circuit 1 -->
+                <div class="col-lg-6">
+                    <div class="circuit-card">
+                        <div class="card-media-wrapper" style="height: 260px;">
+                            <img src="images/LOMPOUL (2).jpg" alt="Désert de Lompoul et Lac Rose">
+                            <span class="card-badge-top-left"><i class="bi bi-calendar-event"></i> 2 Jours / 1 Nuit</span>
+                            <span class="card-badge-top-right">Aventure</span>
+                            <div class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.9 (135 avis)</div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Lac Rose & Lompoul</span>
+                            <h3 class="card-title">L'Épopée des Dunes & du Lac Rose</h3>
+                            <p class="card-desc">Baignade insolite au lac salé, sensations en quad sur les dunes, soirée contes sous les tentes mauritaniennes.</p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-truck"></i> Transport 4x4</li>
+                                <li><i class="bi bi-moon-stars-fill"></i> Nuit bivouac luxe</li>
+                                <li><i class="bi bi-cup-hot-fill"></i> Pension complète</li>
+                            </ul>
+                            <div class="card-footer-action">
+                                <div class="card-price-block">
+                                    <span class="price-label">Tarif tout compris</span>
+                                    <span class="price-value">85 000 FCFA</span>
+                                </div>
+                                <button type="button" class="btn-main btn-book-now" data-bs-toggle="modal" data-bs-target="#reservationModal" data-destination="Circuit Lompoul & Lac Rose">
+                                    Détails & Réservation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circuit 2 -->
+                <div class="col-lg-6">
+                    <div class="circuit-card">
+                        <div class="card-media-wrapper" style="height: 260px;">
+                            <img src="images/saintlouis.jpg" alt="Saint-Louis et Parc Djoudj">
+                            <span class="card-badge-top-left"><i class="bi bi-calendar-event"></i> 3 Jours / 2 Nuits</span>
+                            <span class="card-badge-top-right">Culture & Nature</span>
+                            <div class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.8 (85 avis)</div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Fleuve & Nord Sénégal</span>
+                            <h3 class="card-title">Saint-Louis Coloniale & Parc du Djoudj</h3>
+                            <p class="card-desc">Visite en calèche de l'île historique, sanctuaire mondial de millions d'oiseaux migrateurs et dîner au bord du fleuve.</p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-building"></i> Hôtel de charme</li>
+                                <li><i class="bi bi-binoculars-fill"></i> Safari Djoudj</li>
+                                <li><i class="bi bi-person-badge"></i> Guide local</li>
+                            </ul>
+                            <div class="card-footer-action">
+                                <div class="card-price-block">
+                                    <span class="price-label">Tarif tout compris</span>
+                                    <span class="price-value">130 000 FCFA</span>
+                                </div>
+                                <button type="button" class="btn-main btn-book-now" data-bs-toggle="modal" data-bs-target="#reservationModal" data-destination="Circuit Saint-Louis & Djoudj">
+                                    Détails & Réservation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="pages/circuits.html" class="btn-main">
+                    Découvrir l'ensemble de nos circuits <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         8. OUR COMMITMENTS & SPLIT SECTION
+    ===================================================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-label"><i class="bi bi-heart-fill"></i> Notre Philosophie</span>
+                    <h2 class="section-title">Voyagez avec le Vrai Sens de la Teranga</h2>
+                    <p class="text-muted mb-4">La Teranga n'est pas seulement un mot, c'est l'âme du Sénégal : l'hospitalité généreuse, le partage et le respect de chaque voyageur.</p>
+
+                    <div class="engagement-item-modern">
+                        <div class="engagement-icon-modern">
+                            <i class="bi bi-check2-circle"></i>
+                        </div>
+                        <div>
+                            <h5>Éco-tourisme & Respect des Communautés</h5>
+                            <p>Nos circuits soutiennent directement les artisans, piroguiers et guides locaux des villages visités.</p>
+                        </div>
+                    </div>
+
+                    <div class="engagement-item-modern">
+                        <div class="engagement-icon-modern">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Flexibilité & Devis Personnalisés</h5>
+                            <p>Envie de modifier une étape ou de privatiser un séjour ? Nous créons votre itinéraire sur-mesure.</p>
+                        </div>
+                    </div>
+
+                    <div class="engagement-item-modern">
+                        <div class="engagement-icon-modern">
+                            <i class="bi bi-chat-heart-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Satisfaction Garantie</h5>
+                            <p>Plus de 98% de nos clients nous recommandent à leurs proches après leur séjour.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="pages/apropos.html" class="btn-main">En savoir plus sur notre histoire</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="engagement-image-wrapper">
+                        <img src="images/DAKAR.jpg" alt="Monument de la Renaissance à Dakar">
+                        <div class="floating-experience-card">
+                            <div class="exp-number">10+</div>
+                            <div class="exp-text">
+                                Années d'expérience<br>
+                                <strong>Au cœur du Sénégal</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         9. ANIMATED STATS BAR
+    ===================================================== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-airplane-fill stat-icon"></i>
+                        <div class="stat-number" data-target="5200" data-suffix="+">5 200+</div>
+                        <p class="stat-title">Voyageurs Accompagnés</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-map-fill stat-icon"></i>
+                        <div class="stat-number" data-target="24" data-suffix=" destinations">24</div>
+                        <p class="stat-title">Destinations Inédites</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-hand-thumbs-up-fill stat-icon"></i>
+                        <div class="stat-number" data-target="99" data-suffix="%">99%</div>
+                        <p class="stat-title">Avis Positifs</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <i class="bi bi-people-fill stat-icon"></i>
+                        <div class="stat-number" data-target="35" data-suffix=" guides">35</div>
+                        <p class="stat-title">Guides Experts Locaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         10. TESTIMONIALS (AVIS CLIENTS)
+    ===================================================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label"><i class="bi bi-chat-quote-fill"></i> Témoignages</span>
+                <h2 class="section-title">Ce que disent nos voyageurs</h2>
+                <p class="section-subtitle">Découvrez les retours d'expérience de ceux qui ont voyagé avec nous à travers le Sénégal.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar">MD</div>
+                            <div class="client-info">
+                                <h5>Mamadou Diallo</h5>
+                                <span>Voyage en famille (Saloum)</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Une expérience magique dans le Sine-Saloum ! Notre guide a été d'une gentillesse exceptionnelle et le choix de l'écolodge était tout simplement parfait. Mes enfants en parlent encore."</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">SL</div>
+                            <div class="client-info">
+                                <h5>Sophie & Laurent</h5>
+                                <span>Circuit Lompoul & Gorée</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Organisation sans faille depuis notre arrivée à l'aéroport Blaise Diagne jusqu'au retour. La nuit dans les dunes de Lompoul sous les étoiles restera l'un de nos plus beaux souvenirs de voyage."</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">AB</div>
+                            <div class="client-info">
+                                <h5>Aminata Ba</h5>
+                                <span>Séjour Cap Skirring</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Sénégal Évasion est une agence remarquable ! Une disponibilité 24h/24 sur WhatsApp et des conseils très précieux pour profiter de la Casamance en toute sécurité. Je recommande à 100%."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         11. FAQ SECTION
+    ===================================================== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+                <h2 class="section-title">Questions Fréquentes</h2>
+                <p class="section-subtitle">Tout ce que vous devez savoir pour bien préparer votre séjour avec Sénégal Évasion.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion accordion-custom" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i> Comment effectuer une réservation ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Vous pouvez réserver directement via notre site en cliquant sur le bouton <strong>"Réserver"</strong>, par téléphone au <strong>+221 78 372 92 51</strong>, ou directement via WhatsApp. Un acompte de confirmation valide votre dossier.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i> Les circuits sont-ils privatisables ou personnalisables ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolument ! Tous nos circuits peuvent être privatisés pour votre groupe d'amis ou votre famille, et adaptés selon vos envies (durée, hôtels, activités spécifiques).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i> Quels modes de paiement acceptez-vous ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous acceptons les paiements par Wave, Orange Money, virement bancaire, carte bancaire internationale et en espèces dans nos bureaux de Saint-Louis et Dakar.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i> Quelle est la meilleure période pour visiter le Sénégal ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La période idéale s'étend de novembre à mai (saison sèche avec des températures agréables). Cependant, la saison des pluies (hivernage de juillet à octobre) offre des paysages verdoyants magnifiques en Casamance et au Sine-Saloum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         12. CTA BANNER
+    ===================================================== -->
+    <div class="container my-5">
+        <div class="cta-banner text-center">
+            <span class="hero-pill-badge mb-3"><i class="bi bi-stars"></i> Prêt pour l'aventure ?</span>
+            <h2>Votre Prochain Voyage Commence Aujourd'hui</h2>
+            <p>Confiez vos projets de voyage à nos spécialistes et profitez d'une prise en charge personnalisée de A à Z.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button type="button" class="btn-main" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                    Réserver maintenant <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://wa.me/221783729251" target="_blank" class="btn-secondary-custom">
+                    <i class="bi bi-whatsapp"></i> Échanger sur WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         13. UNIVERSAL RESERVATION MODAL
+    ===================================================== -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservationModalLabel">
+                        <i class="bi bi-airplane-engines-fill"></i> Réserver votre Voyage
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Remplissez ce formulaire et notre conseiller dédié vous contactera dans les 2 heures pour finaliser votre réservation.</p>
+
+                    <form id="reservationForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="modalNom" class="form-label">Nom complet *</label>
+                                <input type="text" class="form-control" id="modalNom" placeholder="Ex: Moussa Ndiaye" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="modalEmail" class="form-label">Adresse email *</label>
+                                <input type="email" class="form-control" id="modalEmail" placeholder="nom@exemple.com" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="modalTel" class="form-label">Téléphone / WhatsApp *</label>
+                                <input type="tel" class="form-control" id="modalTel" placeholder="+221 77 000 00 00" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="destinationSelect" class="form-label">Destination ou Circuit souhaité *</label>
+                                <select class="form-select" id="destinationSelect" required>
+                                    <option value="" selected disabled>Choisir une destination</option>
+                                    <option value="Île de Gorée">Île de Gorée</option>
+                                    <option value="Lac Rose">Lac Rose</option>
+                                    <option value="Delta du Saloum">Delta du Saloum</option>
+                                    <option value="Désert de Lompoul">Désert de Lompoul</option>
+                                    <option value="Saint-Louis">Saint-Louis Colonial</option>
+                                    <option value="Cap Skirring">Cap Skirring & Casamance</option>
+                                    <option value="Niokolo-Koba">Niokolo-Koba Safari</option>
+                                    <option value="Circuit Lompoul & Lac Rose">Circuit Lompoul & Lac Rose (2J)</option>
+                                    <option value="Circuit Saint-Louis & Djoudj">Circuit Saint-Louis & Djoudj (3J)</option>
+                                    <option value="Circuit Découverte Sénégal">Circuit Grand Tour du Sénégal (7J)</option>
+                                    <option value="Autre voyage sur-mesure">Autre projet sur-mesure</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="modalDate" class="form-label">Date approximative</label>
+                                <input type="date" class="form-control" id="modalDate">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="modalPersonnes" class="form-label">Nombre de voyageurs</label>
+                                <select class="form-select" id="modalPersonnes">
+                                    <option value="1 personne">1 personne (Solo)</option>
+                                    <option value="2 personnes" selected>2 personnes (Couple / Duo)</option>
+                                    <option value="3 à 5 personnes">3 à 5 personnes (Famille / Amis)</option>
+                                    <option value="Plus de 6 personnes">Groupe (6 personnes et +)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="modalMessage" class="form-label">Précisions ou demandes particulières</label>
+                                <textarea class="form-control" id="modalMessage" rows="3" placeholder="Préférences d'hébergement, activités souhaitées, questions particulières..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="whatsapp-optin-box">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <div class="form-check m-0">
+                                        <input class="form-check-input" type="checkbox" id="sendWhatsAppCheckbox" checked>
+                                        <label class="form-check-label" for="sendWhatsAppCheckbox">
+                                            Ouvrir directement WhatsApp avec ma demande pour une confirmation ultra-rapide
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-2">
+                                <button type="submit" class="btn-main w-100 py-3">
+                                    <i class="bi bi-send-fill"></i> Confirmer ma demande de réservation
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         14. FLOATING WHATSAPP BUTTON
+    ===================================================== -->
+    <a href="https://wa.me/221783729251?text=Bonjour%20Sénégal%20Évasion,%20je%20souhaite%20des%20informations%20sur%20vos%20offres%20de%20voyage." target="_blank" class="floating-whatsapp" aria-label="Contactez-nous sur WhatsApp" title="Discutez avec un conseiller sur WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- =====================================================
+         15. FOOTER
+    ===================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <div class="brand-icon-wrapper" style="width: 36px; height: 36px; font-size: 17px;">
+                            <i class="bi bi-airplane-engines-fill"></i>
+                        </div>
+                        Sénégal Évasion
+                    </a>
+                    <p class="footer-desc">
+                        Votre partenaire d'excellence pour découvrir le Sénégal et l'Afrique dans des conditions de confort et de sécurité optimales.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/221783729251" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Accueil</a></li>
+                        <li><a href="pages/destinations.html"><i class="bi bi-chevron-right"></i> Destinations</a></li>
+                        <li><a href="pages/circuits.html"><i class="bi bi-chevron-right"></i> Circuits</a></li>
+                        <li><a href="pages/apropos.html"><i class="bi bi-chevron-right"></i> À propos</a></li>
+                        <li><a href="pages/contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Nos Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="pages/destinations.html"><i class="bi bi-chevron-right"></i> Séjours Balnéaires</a></li>
+                        <li><a href="pages/circuits.html"><i class="bi bi-chevron-right"></i> Circuits Découverte</a></li>
+                        <li><a href="pages/circuits.html"><i class="bi bi-chevron-right"></i> Safaris & Écotourisme</a></li>
+                        <li><a href="#reservationModal" data-bs-toggle="modal"><i class="bi bi-chevron-right"></i> Voyages Sur-Mesure</a></li>
+                        <li><a href="pages/contact.html"><i class="bi bi-chevron-right"></i> Transferts & Excursions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Nous Contacter</h5>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Saint-Louis & Dakar, Sénégal</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <span><a href="tel:+221783729251" class="text-white">+221 78 372 92 51</a></span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <span><a href="mailto:contact@senegalevasion.com" class="text-white">contact@senegalevasion.com</a></span>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock-fill"></i>
+                            <span>Lun - Sam : 08h00 - 19h00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="mb-0">© 2026 <strong>Sénégal Évasion</strong>. Tous droits réservés.</p>
+                <div class="d-flex gap-3">
+                    <a href="#">Mentions Légales</a>
+                    <span>•</span>
+                    <a href="#">Politique de Confidentialité</a>
+                    <span>•</span>
+                    <a href="#">Conditions Générales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
