@@ -163,8 +163,41 @@ img {
     color: var(--primary) !important;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+.brand-logo-img {
+    height: 52px;
+    width: auto;
+    max-width: 72px;
+    object-fit: contain;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08));
+}
+
+/* New SVG full-logo in navbar */
+.brand-logo-full {
+    height: 52px;
+    width: auto;
+    max-width: 290px;
+    object-fit: contain;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+}
+
+.navbar-brand:hover .brand-logo-img {
+    transform: scale(1.06) rotate(-2deg);
+}
+
+.navbar-brand:hover .brand-logo-full {
+    transform: scale(1.04);
+    filter: drop-shadow(0 4px 12px rgba(245,158,11,0.25));
+}
+
+.brand-accent {
+    color: var(--accent);
 }
 
 .brand-icon-wrapper {
@@ -188,21 +221,25 @@ img {
 .brand-text {
     display: flex;
     flex-direction: column;
-    line-height: 1;
+    line-height: 1.15;
 }
 
 .brand-text .title {
     font-size: 1.35rem;
     font-weight: 800;
     color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .brand-text .subtitle {
-    font-size: 10px;
+    font-size: 9.5px;
     font-weight: 700;
     color: var(--accent);
-    letter-spacing: 1.8px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
+    margin-top: 2px;
 }
 
 .navbar-nav {
@@ -1406,8 +1443,57 @@ img {
     color: var(--white) !important;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer-logo-img {
+    height: 48px;
+    width: auto;
+    max-width: 65px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: var(--transition);
+}
+
+.footer-brand:hover .footer-logo-img {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-brand .brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.footer-brand .brand-text .title {
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.footer-brand .brand-text .subtitle {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.modal-logo-img {
+    height: 36px;
+    width: auto;
+    max-width: 200px;
+    margin-right: 10px;
+    vertical-align: middle;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .footer-desc {
@@ -1663,4 +1749,79 @@ img {
         width: 100%;
         text-align: center;
     }
+}
+
+/* ==========================================================================
+   23. MOYENS DE TRANSPORT SECTION & BOOKING FORM
+   ========================================================================== */
+.transport-section {
+    background-color: var(--gray-bg);
+    position: relative;
+}
+
+.transport-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.transport-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(2, 132, 199, 0.3);
+}
+
+.transport-card .card-media-wrapper {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.transport-card .card-media-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transport-card:hover .card-media-wrapper img {
+    transform: scale(1.06);
+}
+
+.transport-booking-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid #E2E8F0;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.transport-booking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 50%, var(--emerald) 100%);
+}
+
+.footer-logo-full {
+    height: 52px;
+    width: auto;
+    max-width: 260px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.footer-brand:hover .footer-logo-full {
+    transform: scale(1.04);
 }

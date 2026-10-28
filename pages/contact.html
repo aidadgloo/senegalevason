@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/logo-emblem.png">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -48,14 +51,8 @@
     ===================================================== -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <div class="brand-icon-wrapper">
-                    <i class="bi bi-airplane-engines-fill"></i>
-                </div>
-                <div class="brand-text">
-                    <span class="title">Sénégal Évasion</span>
-                    <span class="subtitle">L'art du voyage & évasion</span>
-                </div>
+            <a class="navbar-brand" href="../index.html" aria-label="Sénégal Évasion - Accueil">
+                <img src="../images/logo-transparent.png" alt="Sénégal Évasion - Agence de Voyage au Sénégal" class="brand-logo-full">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Afficher le menu">
@@ -78,6 +75,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#transports"><i class="bi bi-signpost-split-fill me-1"></i>Transports</a>
                     </li>
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
                         <a class="nav-link nav-btn-book" href="#reservationModal" data-bs-toggle="modal" data-bs-target="#reservationModal">
@@ -292,7 +292,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="reservationModalLabel">
-                        <i class="bi bi-airplane-engines-fill"></i> Réserver votre Voyage
+                        <img src="../images/logo-emblem.png" alt="Logo" class="modal-logo-img"> Réserver votre Voyage
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
@@ -390,14 +390,11 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <a href="../index.html" class="footer-brand">
-                        <div class="brand-icon-wrapper" style="width: 36px; height: 36px; font-size: 17px;">
-                            <i class="bi bi-airplane-engines-fill"></i>
-                        </div>
-                        Sénégal Évasion
+                    <a href="../index.html" class="footer-brand" aria-label="Sénégal Évasion - Accueil">
+                        <img src="../images/logo-se-new-white.svg" alt="Sénégal Évasion Logo" class="footer-logo-full">
                     </a>
                     <p class="footer-desc">
-                        Votre partenaire d'excellence pour découvrir le Sénégal et l'Afrique dans des conditions de confort et de sécurité optimales.
+                        Votre agence réceptive de référence pour le tourisme au Sénégal : circuits guidés authentiques, séjours balnéaires, écotourisme et aventures sur-mesure à travers tout le pays.
                     </p>
                     <div class="footer-social-links">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>

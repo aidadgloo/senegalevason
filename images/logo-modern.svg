@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" width="340" height="70">
+  <defs>
+    <linearGradient id="sunGradH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="60%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="waveLightH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="waveDarkH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0A192F" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="shadowH" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- ================= EMBLEM (x: 0 to 65) ================= -->
+  <g transform="translate(4, 2) scale(0.55)">
+    <!-- Sun Circle -->
+    <circle cx="65" cy="48" r="30" fill="url(#sunGradH)" filter="url(#shadowH)" />
+
+    <!-- Birds -->
+    <path d="M 52,24 Q 56,21 60,24 Q 64,21 68,24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" />
+    <path d="M 70,32 Q 73,29 76,32 Q 79,29 82,32" fill="none" stroke="#0F172A" stroke-width="1.6" stroke-linecap="round" />
+
+    <!-- Palm Tree -->
+    <path d="M 36,74 Q 35,54 44,38 Q 41,54 40,74 Z" fill="#0D5C3A" />
+    <path d="M 44,38 Q 28,32 20,42 C 28,39 36,42 44,38 Z" fill="#059669" />
+    <path d="M 44,38 Q 34,23 26,24 C 34,27 40,32 44,38 Z" fill="#10B981" />
+    <path d="M 44,38 Q 46,20 54,20 C 52,26 48,32 44,38 Z" fill="#059669" />
+    <path d="M 44,38 Q 58,24 64,30 C 58,32 52,35 44,38 Z" fill="#10B981" />
+
+    <!-- Ocean Waves -->
+    <path d="M 6,80 C 24,74 42,84 62,78 C 82,72 98,80 110,78 L 110,94 C 94,94 74,96 54,96 C 34,96 16,92 6,94 Z" fill="url(#waveLightH)" opacity="0.85" />
+    <path d="M 4,86 C 26,80 46,90 68,84 C 88,78 104,84 112,82 L 112,104 C 92,104 72,106 52,106 C 32,106 14,104 4,104 Z" fill="url(#waveDarkH)" />
+
+    <!-- Traditional Pirogue -->
+    <path d="M 14,75 C 30,84 76,84 94,71 C 84,79 38,81 22,77 Z" fill="#78350F" />
+    <path d="M 14,75 C 32,82 74,82 92,72 L 94,70 C 76,78 32,78 16,72 Z" fill="#F59E0B" />
+    <!-- Flag Stripes -->
+    <path d="M 30,76 L 42,77 L 41,79 L 29,78 Z" fill="#059669" />
+    <path d="M 42,77 L 54,77.5 L 53,79.5 L 41,79 Z" fill="#FBBF24" />
+    <path d="M 54,77.5 L 66,77 L 65,79 L 53,79.5 Z" fill="#DC2626" />
+
+    <!-- Foam Highlight -->
+    <path d="M 10,92 C 26,87 42,93 60,89 C 78,85 94,90 106,88" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+  </g>
+
+  <!-- ================= TYPOGRAPHY (x: 74 to 340) ================= -->
+  <!-- "Sénégal" -->
+  <text x="76" y="34" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="25" fill="#0A192F" letter-spacing="-0.5">Sénégal</text>
+  
+  <!-- "Évasion" -->
+  <text x="174" y="34" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="25" fill="url(#accentGrad)" letter-spacing="-0.5">Évasion</text>
+
+  <!-- Dynamic Swoosh / Flight arc -->
+  <path d="M 76,43 C 140,43 235,42 278,48 C 290,50 300,53 310,50" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Stylized Airplane Icon on Swoosh -->
+  <path d="M 314,48 L 324,49 L 320,53 L 314,51 Z" fill="#F59E0B" />
+  <path d="M 318,48.5 L 320,44 L 321.5,48.8 Z" fill="#F59E0B" />
+
+  <!-- Slogan / Subtitle -->
+  <text x="78" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="8.5" fill="#0D5C3A" letter-spacing="2.2">DÉCOUVREZ  •  EXPLOREZ  •  VIVEZ</text>
+</svg>

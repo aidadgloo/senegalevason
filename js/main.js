@@ -252,4 +252,84 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(statsSection);
         }
     }
+
+    // 10. TRANSPORT SECTION - Button "Réserver ce transport" handlers
+    const transportSelectBtns = document.querySelectorAll('.btn-select-transport');
+    const transportTypeSelect = document.getElementById('transportType');
+    const transportFormSection = document.getElementById('form-transport');
+
+    if (transportSelectBtns.length > 0) {
+        transportSelectBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const transportName = btn.getAttribute('data-transport');
+
+                // Pre-fill the transport select in the form below
+                if (transportTypeSelect && transportName) {
+                    for (let option of transportTypeSelect.options) {
+                        if (option.value.toLowerCase().includes(transportName.toLowerCase()) ||
+                            transportName.toLowerCase().includes(option.value.toLowerCase())) {
+                            transportTypeSelect.value = option.value;
+                            break;
+                        }
+                    }
+                }
+
+                // Smooth scroll to the reservation form
+                if (transportFormSection) {
+                    transportFormSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    // Add a brief highlight animation on the form
+                    const bookingCard = transportFormSection.querySelector('.transport-booking-card');
+                    if (bookingCard) {
+                        bookingCard.style.transition = 'box-shadow 0.4s ease';
+                        bookingCard.style.boxShadow = '0 0 0 3px rgba(245, 158, 11, 0.5), 0 16px 40px -8px rgba(15, 23, 42, 0.12)';
+                        setTimeout(() => {
+                            bookingCard.style.boxShadow = '';
+                        }, 2000);
+                    }
+                }
+            });
+        });
+    }
+
+    // 11. TRANSPORT BOOKING FORM SUBMISSION
+    const transportBookingForm = document.getElementById('transportBookingForm');
+    if (transportBookingForm) {
+        transportBookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nom = document.getElementById('transportNom')?.value.trim() || 'Client';
+            const tel = document.getElementById('transportTel')?.value.trim() || '';
+            const transport = document.getElementById('transportType')?.options[document.getElementById('transportType')?.selectedIndex]?.text || 'Non spécifié';
+            const destination = document.getElementById('transportDestination')?.options[document.getElementById('transportDestination')?.selectedIndex]?.text || 'Non spécifiée';
+            const date = document.getElementById('transportDate')?.value || 'Dès que possible';
+            const passagers = document.getElementById('transportPassagers')?.value.trim() || '';
+
+            // Compose WhatsApp message
+            const textMessage = `*Demande de Réservation Transport - Sénégal Évasion*\n\n` +
+                `👤 *Nom:* ${nom}\n` +
+                `📞 *Téléphone / WhatsApp:* ${tel}\n` +
+                `🚌 *Transport souhaité:* ${transport}\n` +
+                `📍 *Destination:* ${destination}\n` +
+                `📅 *Date souhaitée:* ${date}\n` +
+                (passagers ? `👥 *Précisions / Passagers:* ${passagers}\n` : '');
+
+            const whatsappUrl = `https://wa.me/221783729251?text=${encodeURIComponent(textMessage)}`;
+            window.open(whatsappUrl, '_blank');
+
+            // Show success alert inside the form
+            const alertEl = document.getElementById('transportFormAlert');
+            if (alertEl) {
+                alertEl.classList.remove('d-none');
+                alertEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                setTimeout(() => alertEl.classList.add('d-none'), 8000);
+            }
+
+            // Show toast
+            showToast('Demande envoyée !', `Merci ${nom}, votre demande de transport "${transport}" a bien été transmise via WhatsApp. Notre équipe vous répondra très rapidement.`);
+
+            transportBookingForm.reset();
+        });
+    }
 });
+

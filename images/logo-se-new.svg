@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" width="380" height="80" role="img" aria-label="Sénégal Évasion - Agence de Voyage">
+  <defs>
+    <!-- Gold gradient for sun and accents -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="55%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <!-- Ocean gradient -->
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <!-- Deep ocean gradient -->
+    <linearGradient id="deepOceanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0A192F"/>
+    </linearGradient>
+    <!-- Accent text gradient -->
+    <linearGradient id="accentTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <!-- Emblem background -->
+    <linearGradient id="emblemBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A192F"/>
+      <stop offset="100%" stop-color="#152B52"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0A192F" flood-opacity="0.2"/>
+    </filter>
+    <!-- Glow filter for sun -->
+    <filter id="sunGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FBBF24" flood-opacity="0.5"/>
+    </filter>
+    <!-- Clip for emblem circle -->
+    <clipPath id="circleClip">
+      <circle cx="40" cy="40" r="36"/>
+    </clipPath>
+  </defs>
+
+  <!-- =================== EMBLEM (circle badge) =================== -->
+  <g filter="url(#softShadow)">
+    <!-- Outer ring -->
+    <circle cx="40" cy="40" r="38" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <!-- Background circle -->
+    <circle cx="40" cy="40" r="36" fill="url(#emblemBgGrad)"/>
+
+    <!-- Sky area (inside circle) -->
+    <circle cx="40" cy="40" r="36" fill="#0A192F" clip-path="url(#circleClip)"/>
+
+    <!-- ---- Sunset Sun ---- -->
+    <circle cx="40" cy="28" r="13" fill="url(#goldGrad)" filter="url(#sunGlow)" clip-path="url(#circleClip)"/>
+    <!-- Sun rays (subtle) -->
+    <line x1="40" y1="11" x2="40" y2="8" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.7" clip-path="url(#circleClip)"/>
+    <line x1="50.5" y1="14.5" x2="52.5" y2="12" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.6" clip-path="url(#circleClip)"/>
+    <line x1="29.5" y1="14.5" x2="27.5" y2="12" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.6" clip-path="url(#circleClip)"/>
+    <line x1="58" y1="26" x2="61" y2="25" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.5" clip-path="url(#circleClip)"/>
+    <line x1="22" y1="26" x2="19" y2="25" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.5" clip-path="url(#circleClip)"/>
+
+    <!-- ---- Flying Bird (top right of sun) ---- -->
+    <path d="M 52,20 Q 54.5,17.5 57,20 Q 59.5,17.5 62,20" fill="none" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round" clip-path="url(#circleClip)"/>
+    <path d="M 60,24 Q 62,21.5 64,24" fill="none" stroke="#0F172A" stroke-width="1.4" stroke-linecap="round" clip-path="url(#circleClip)"/>
+
+    <!-- ---- Palm Tree ---- -->
+    <!-- Trunk -->
+    <path d="M 16,75 Q 16.5,60 18,45 Q 18.5,38 20,33" stroke="#5C3D11" stroke-width="3.5" fill="none" stroke-linecap="round" clip-path="url(#circleClip)"/>
+    <!-- Fronds -->
+    <path d="M 20,33 Q 8,28 5,20 C 10,26 16,30 20,33 Z" fill="#059669" clip-path="url(#circleClip)"/>
+    <path d="M 20,33 Q 12,22 14,13 C 16,20 18,27 20,33 Z" fill="#10B981" clip-path="url(#circleClip)"/>
+    <path d="M 20,33 Q 24,20 28,16 C 26,23 23,29 20,33 Z" fill="#059669" clip-path="url(#circleClip)"/>
+    <path d="M 20,33 Q 30,24 36,24 C 30,28 25,31 20,33 Z" fill="#047857" clip-path="url(#circleClip)"/>
+    <path d="M 20,33 Q 32,34 38,38 C 31,36 25,34 20,33 Z" fill="#10B981" clip-path="url(#circleClip)"/>
+
+    <!-- ---- Ocean waves (bottom half) ---- -->
+    <!-- Wave 1 -->
+    <path d="M 4,58 C 14,53 26,62 40,57 C 54,52 66,60 76,57 L 76,76 L 4,76 Z" fill="url(#oceanGrad)" opacity="0.9" clip-path="url(#circleClip)"/>
+    <!-- Wave 2 (deeper) -->
+    <path d="M 4,64 C 16,59 30,68 44,63 C 58,58 70,65 76,62 L 76,76 L 4,76 Z" fill="url(#deepOceanGrad)" clip-path="url(#circleClip)"/>
+
+    <!-- ---- Traditional Pirogue ---- -->
+    <!-- Hull -->
+    <path d="M 8,57 C 20,64 55,65 70,55 C 65,61 35,63 15,59 Z" fill="#78350F" clip-path="url(#circleClip)"/>
+    <!-- Upper hull stripe (Sénégal flag colors) -->
+    <path d="M 8,57 C 24,62 54,63 68,56 L 70,54 C 58,60 28,61 12,55 Z" fill="#F59E0B" clip-path="url(#circleClip)"/>
+    <!-- Sail mast -->
+    <line x1="38" y1="57" x2="38" y2="40" stroke="#4A2C11" stroke-width="1.8" clip-path="url(#circleClip)"/>
+    <!-- Sail -->
+    <path d="M 38,40 L 55,46 L 38,54 Z" fill="rgba(248,250,252,0.85)" stroke="#CBD5E1" stroke-width="0.5" clip-path="url(#circleClip)"/>
+    <!-- Foam highlight -->
+    <path d="M 6,62 C 18,58 32,63 46,60 C 60,57 70,61 74,60" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" clip-path="url(#circleClip)"/>
+  </g>
+
+  <!-- =================== TYPOGRAPHY =================== -->
+  <!-- "Sénégal" -->
+  <text x="93" y="38" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="28" fill="#0A192F" letter-spacing="-0.8">Sénégal</text>
+
+  <!-- Space + "Évasion" in gold accent -->
+  <text x="210" y="38" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="28" fill="url(#accentTextGrad)" letter-spacing="-0.8">Évasion</text>
+
+  <!-- Decorative swoosh line under text -->
+  <path d="M 93,47 C 160,46 250,45.5 305,51 C 317,52.5 327,55.5 337,52" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Small airplane icon at end of swoosh -->
+  <g transform="translate(338,49)" fill="#F59E0B">
+    <!-- plane body -->
+    <path d="M 0,0 L 12,2 L 9,6 L 2,4 Z"/>
+    <!-- wing up -->
+    <path d="M 5,0 L 7,-5 L 8.5,0.5 Z"/>
+    <!-- tail -->
+    <path d="M 1,3.5 L -2,5 L 1,4.5 Z"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="95" y="63" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="8.5" fill="#059669" letter-spacing="2.8">DÉCOUVREZ  ✦  EXPLOREZ  ✦  VIVEZ</text>
+</svg>
