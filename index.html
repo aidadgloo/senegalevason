@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-se-new.svg">
+    <link rel="icon" type="image/png" href="images/logo-emblem.png">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,14 +52,8 @@
     ===================================================== -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <div class="brand-icon-wrapper">
-                    <i class="bi bi-airplane-engines-fill"></i>
-                </div>
-                <div class="brand-text">
-                    <span class="title">Sénégal Évasion</span>
-                    <span class="subtitle">L'art du voyage & évasion</span>
-                </div>
+            <a class="navbar-brand" href="index.html" aria-label="Sénégal Évasion - Accueil">
+                <img src="images/logo-se-new.svg" alt="Sénégal Évasion - Agence de Voyage au Sénégal" class="brand-logo-full">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Afficher le menu">
@@ -78,6 +76,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transports"><i class="bi bi-signpost-split-fill me-1"></i>Transports</a>
                     </li>
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
                         <a class="nav-link nav-btn-book" href="#reservationModal" data-bs-toggle="modal" data-bs-target="#reservationModal">
@@ -477,7 +478,304 @@
     </section>
 
     <!-- =====================================================
-         8. OUR COMMITMENTS & SPLIT SECTION
+         8. NOS MOYENS DE TRANSPORT
+    ===================================================== -->
+    <section class="transport-section py-5" id="transports">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-label"><i class="bi bi-compass-fill"></i> Mobilité & Aventure</span>
+                <h2 class="section-title">Nos Moyens de Transport</h2>
+                <p class="section-subtitle">
+                    De la navigation authentique en pirogue à la puissance du 4x4 tout-terrain, profitez d'une flotte variée et sécurisée pour explorer le Sénégal en toute sérénité.
+                </p>
+            </div>
+
+            <!-- Transport Cards Grid -->
+            <div class="row g-4">
+                <!-- 1. Pirogue traditionnelle -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/pirogue-traditionnelle.jpg" alt="Pirogue traditionnelle au Sénégal" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-water"></i> Fleuve & Lagune</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.9 (180+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Sine-Saloum & Casamance</span>
+                            <h3 class="card-title">Pirogue Traditionnelle</h3>
+                            <p class="card-desc">
+                                Naviguez au fil des mangroves et des bolongs sauvages. Une immersion paisible pour contempler les oiseaux du delta et aborder les îles préservées.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-person-badge"></i> Piroguier local</li>
+                                <li><i class="bi bi-shield-check"></i> Gilets de sauvetage</li>
+                                <li><i class="bi bi-camera"></i> Éco-tourisme</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Pirogue traditionnelle">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Chaloupe -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/chaloupe-goree.jpg" alt="Chaloupe pour l'Île de Gorée" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-compass"></i> Traversée Maritime</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.8 (210+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Embarcadère Dakar - Gorée</span>
+                            <h3 class="card-title">Chaloupe</h3>
+                            <p class="card-desc">
+                                Liaison maritime incontournable entre le port de Dakar et l'île de Gorée. Une traversée emblématique avec vue panoramique sur la rade dakaroise.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-clock-history"></i> Départs fréquents</li>
+                                <li><i class="bi bi-binoculars"></i> Vue sur l'océan</li>
+                                <li><i class="bi bi-check-circle"></i> Service officiel</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Chaloupe">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Voiture climatisée -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/voiture-climatisee.jpg" alt="Voiture climatisée avec chauffeur au Sénégal" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-car-front-fill"></i> Confort Privé</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 5.0 (150+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Dakar, AIBD & Petite Côte</span>
+                            <h3 class="card-title">Voiture Climatisée</h3>
+                            <p class="card-desc">
+                                Berline moderne, climatisée et soignée avec chauffeur privé expérimenté. Idéale pour vos transferts aéroport, séjours d'affaires et circuits privés.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-snow"></i> Climatisation</li>
+                                <li><i class="bi bi-person-check-fill"></i> Chauffeur dédié</li>
+                                <li><i class="bi bi-shield-check"></i> Ponctualité 24/7</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Voiture climatisée">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Calèche -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/caleche-saint-louis.jpg" alt="Calèche traditionnelle à Saint-Louis" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-clock"></i> Visite Historique</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.9 (130+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Île de Saint-Louis (UNESCO)</span>
+                            <h3 class="card-title">Calèche</h3>
+                            <p class="card-desc">
+                                Parcourez les ruelles chargées d'histoire et les façades coloniales au pas mesuré du cheval. Une immersion romantique et culturelle inoubliable.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-building"></i> Centre historique</li>
+                                <li><i class="bi bi-chat-quote"></i> Cocher passionné</li>
+                                <li><i class="bi bi-heart-fill"></i> Romantique & doux</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Calèche">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Minibus touristique -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/minibus-touristique.jpg" alt="Minibus touristique pour groupe au Sénégal" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-people-fill"></i> Groupes & Familles</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 4.9 (95+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Tous Itinéraires au Sénégal</span>
+                            <h3 class="card-title">Minibus Touristique</h3>
+                            <p class="card-desc">
+                                Véhicule spacieux, climatisé et tout confort conçu pour les circuits en famille, groupes d'amis ou séminaires vers les réserves fauniques et parcs.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-people-fill"></i> Jusqu'à 15 places</li>
+                                <li><i class="bi bi-luggage-fill"></i> Grand coffre</li>
+                                <li><i class="bi bi-snow"></i> Double climatisation</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Minibus touristique">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Véhicule 4x4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="transport-card">
+                        <div class="card-media-wrapper">
+                            <img src="images/vehicule-4x4.jpg" alt="Véhicule 4x4 tout-terrain au Sénégal" loading="lazy">
+                            <span class="card-badge-top-left"><i class="bi bi-signpost-2-fill"></i> Safari & Pistes</span>
+                            <span class="card-rating-badge"><i class="bi bi-star-fill"></i> 5.0 (175+ avis)</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-location"><i class="bi bi-geo-alt-fill"></i> Lompoul, Niokolo-Koba & Brousse</span>
+                            <h3 class="card-title">Véhicule 4x4</h3>
+                            <p class="card-desc">
+                                Robuste véhicule tout-terrain équipé pour dompter les dunes dorées de Lompoul, les pistes rouges du Niokolo-Koba et les sentiers isolés du pays Bassari.
+                            </p>
+                            <ul class="card-features-list">
+                                <li><i class="bi bi-shield-shaded"></i> Motricité 4 roues</li>
+                                <li><i class="bi bi-compass-fill"></i> Chauffeur pisteur</li>
+                                <li><i class="bi bi-sun-fill"></i> Safari & dunes</li>
+                            </ul>
+                            <div class="mt-auto pt-3 border-top">
+                                <button type="button" class="btn-main w-100 btn-select-transport" data-transport="Véhicule 4x4">
+                                    <i class="bi bi-calendar-check-fill"></i> Réserver ce transport
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de Demande de Réservation de Transport -->
+            <div class="row justify-content-center mt-5" id="form-transport">
+                <div class="col-lg-10">
+                    <div class="transport-booking-card p-4 p-md-5">
+                        <div class="row align-items-center mb-4">
+                            <div class="col-md-8">
+                                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2">
+                                    <i class="bi bi-lightning-charge-fill"></i> Devis Express Gratuit
+                                </span>
+                                <h3 class="fw-bold mb-1" style="color: var(--primary);">Demande de Réservation de Transport</h3>
+                                <p class="text-muted mb-0">Renseignez vos coordonnées et choisissez votre moyen de transport pour recevoir notre confirmation et votre devis sous 2h.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-light text-muted p-2 border">
+                                    <i class="bi bi-shield-check text-success fs-5 align-middle me-1"></i> Réponse garantie 24h/7j
+                                </span>
+                            </div>
+                        </div>
+
+                        <form id="transportBookingForm">
+                            <div class="row g-3">
+                                <!-- Nom -->
+                                <div class="col-md-6">
+                                    <label for="transportNom" class="form-label fw-semibold">Nom complet <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-person-fill text-muted"></i></span>
+                                        <input type="text" id="transportNom" name="nom" class="form-control border-start-0" placeholder="Ex: Moussa Diop" required>
+                                    </div>
+                                </div>
+
+                                <!-- Téléphone -->
+                                <div class="col-md-6">
+                                    <label for="transportTel" class="form-label fw-semibold">Téléphone / WhatsApp <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-whatsapp text-success"></i></span>
+                                        <input type="tel" id="transportTel" name="telephone" class="form-control border-start-0" placeholder="Ex: +221 78 372 92 51" required>
+                                    </div>
+                                </div>
+
+                                <!-- Transport souhaité -->
+                                <div class="col-md-6">
+                                    <label for="transportType" class="form-label fw-semibold">Transport souhaité <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-signpost-split-fill text-muted"></i></span>
+                                        <select id="transportType" name="transport" class="form-select border-start-0" required>
+                                            <option value="" disabled selected>Sélectionnez un moyen de transport</option>
+                                            <option value="Pirogue traditionnelle">Pirogue traditionnelle (Sine-Saloum & Casamance)</option>
+                                            <option value="Chaloupe">Chaloupe (Dakar - Île de Gorée)</option>
+                                            <option value="Voiture climatisée">Voiture climatisée avec chauffeur privé</option>
+                                            <option value="Calèche">Calèche (Visite historique de Saint-Louis)</option>
+                                            <option value="Minibus touristique">Minibus touristique (Excursions groupe & famille)</option>
+                                            <option value="Véhicule 4x4">Véhicule 4x4 tout-terrain (Désert & Safari)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Destination -->
+                                <div class="col-md-6">
+                                    <label for="transportDestination" class="form-label fw-semibold">Destination prévue <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-geo-alt-fill text-muted"></i></span>
+                                        <select id="transportDestination" name="destination" class="form-select border-start-0" required>
+                                            <option value="" disabled selected>Sélectionnez une destination</option>
+                                            <option value="Dakar & Almadies">Dakar & Almadies</option>
+                                            <option value="Île de Gorée">Île de Gorée</option>
+                                            <option value="Saint-Louis & Djoudj">Saint-Louis & Djoudj</option>
+                                            <option value="Delta du Sine-Saloum">Delta du Sine-Saloum</option>
+                                            <option value="Désert de Lompoul">Désert de Lompoul</option>
+                                            <option value="Casamance & Cap Skirring">Casamance & Cap Skirring</option>
+                                            <option value="Saly & Petite Côte">Saly & Petite Côte</option>
+                                            <option value="Parc Niokolo-Koba">Parc National du Niokolo-Koba</option>
+                                            <option value="Autre destination">Autre destination / Sur-mesure</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Date -->
+                                <div class="col-md-6">
+                                    <label for="transportDate" class="form-label fw-semibold">Date souhaitée <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-calendar-event text-muted"></i></span>
+                                        <input type="date" id="transportDate" name="date" class="form-control border-start-0" required>
+                                    </div>
+                                </div>
+
+                                <!-- Précisions / Passagers -->
+                                <div class="col-md-6">
+                                    <label for="transportPassagers" class="form-label fw-semibold">Nombre de personnes / Précisions</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-people-fill text-muted"></i></span>
+                                        <input type="text" id="transportPassagers" name="passagers" class="form-control border-start-0" placeholder="Ex: 2 adultes, besoin siège enfant (optionnel)">
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-main w-100 py-3 fs-6">
+                                        <i class="bi bi-send-check-fill me-2"></i> Envoyer ma Demande de Réservation de Transport
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="transportFormAlert" class="alert alert-success d-none mt-3 mb-0" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            <strong>Demande transmise avec succès !</strong> Notre équipe vous contactera très rapidement par téléphone ou WhatsApp pour confirmer votre transport.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         9. OUR COMMITMENTS & SPLIT SECTION
     ===================================================== -->
     <section class="py-5 bg-white">
         <div class="container">
@@ -737,7 +1035,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="reservationModalLabel">
-                        <i class="bi bi-airplane-engines-fill"></i> Réserver votre Voyage
+                        <img src="images/logo-se-new.svg" alt="Logo Sénégal Évasion" class="modal-logo-img"> Réserver votre Voyage
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                 </div>
@@ -838,14 +1136,11 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <a href="index.html" class="footer-brand">
-                        <div class="brand-icon-wrapper" style="width: 36px; height: 36px; font-size: 17px;">
-                            <i class="bi bi-airplane-engines-fill"></i>
-                        </div>
-                        Sénégal Évasion
+                    <a href="index.html" class="footer-brand" aria-label="Sénégal Évasion - Accueil">
+                        <img src="images/logo-se-new-white.svg" alt="Sénégal Évasion Logo" class="footer-logo-full">
                     </a>
                     <p class="footer-desc">
-                        Votre partenaire d'excellence pour découvrir le Sénégal et l'Afrique dans des conditions de confort et de sécurité optimales.
+                        Votre agence réceptive de référence pour le tourisme au Sénégal : circuits guidés authentiques, séjours balnéaires, écotourisme et aventures sur-mesure à travers tout le pays.
                     </p>
                     <div class="footer-social-links">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
